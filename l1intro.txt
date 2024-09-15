@@ -104,7 +104,7 @@ Hardware
     4. Execution (machine code)
 
 => Interpreter
-    Python source code -> byte code (.pyc format) -> Interpretered line by line (python virtual machine (PVM)
+    Python source code -> byte code (.pyc format) -> Interpreted line by line (python virtual machine (PVM)
 
 => How Python Code Work?
     Interpreted Language
@@ -118,5 +118,74 @@ Hardware
         PVM-> CPU->run
     4. Just-in-time (JIT) compilation
 
+=> Advantage of Python Programming Language
+    1. Easy Syntax
+        print("Hello World")
+    2. Interpreted Language
+    3. Height-Level Language
+    4.Dynamic Typing Language
+        eg: statically type languages( C, C++, C#, Java, Go, Swift)
+        eg: (java example code)
 
-8PT
+        public class Main{
+            public static void main(string[] args){
+                int x = 100; // static type : int
+                double y = 99.99; // static type : double
+                string name = "Aung Aung"; // static type : string
+
+                System.out.pringln("x value is "+x);
+                System.out.pringln("y value is "+y);
+                System.out.pringln("name value is "+name);
+            }
+        }
+
+        eg: (python example code)
+            x = 10 # integer
+            name = "Maung Maung" # string
+
+            print("x value is "+x)
+            print("name value is "+name)
+
+    5. General purpose Language
+        Web Development
+        Data Analysis
+        Machine Learning
+        Artificial Intelligence
+        Game Development
+        Mobile Applications
+
+https://www.python.org/
+
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install python3
+
+=>Install on ubuntu
+
+ls
+tar -xvf Python-3.12.6.tar.xy
+ls
+cd Python-3.12
+ls
+./configure
+make
+sudo make install
+
+
+=>Check Version
+python3 --version
+python3.11 --version
+
+python3
+ctrl+d (or) exit()
+
+python3 l1sample.py
+python l1sample.py
+py l1sample.py
+
+=> Comment (inline comment)
+#
+
+
+
