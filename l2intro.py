@@ -52,13 +52,13 @@ print(sum2)
 num1 = 100
 num2 = 200.125
 name = "su su"
-hascar = True  # first letter must be capital for bool
+hasCar = True  # first letter must be capital for bool
 
 print(num1, num2)  # 100 200.125
 print(type(num1))  # <class 'int'>
 print(type(num2))  # <class 'float'>
 print(type(name))  # <class 'str'>
-print(type(hascar))  # <class 'bool'>
+print(type(hasCar))  # <class 'bool'>
 
 colors = ["red","green","blue"]
 print(colors)
@@ -66,6 +66,8 @@ print(type(colors))  # <class 'list'>
 
 ages = [20,25,30,35]
 print(ages)
+print(type(ages))  # <class 'list'>
 
+print(type({"name": "su su"}))  # <class 'dict'> dictionary
 # 22AR
 
