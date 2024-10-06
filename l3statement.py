@@ -107,21 +107,4 @@ else:
     print("No")
 
 
-# Functions
-# 1. Simple Function with no parameter
-# 2. Function with parameter
-# (i) single parameter function
-# (ii) multi parameter function
-# 3. Function with default parameter
-# 4. Function with a Return Value
-# 5. Function with multi return values
-# 5. Lambda Function (anonymous function)
-
-def sayname():
-    print("Hello Aung Aung")
-
-
-sayname()
-sayname()
-
 # 29FN
