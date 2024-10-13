@@ -34,7 +34,7 @@ print(10 not in arr)
 
 
 def funone():
-    print("I am funone")
+    return "I am funone"
 
 
 funone()
@@ -45,3 +45,40 @@ else:
     print("No")
 
 print(type({"name": "nu nu"}))
+
+"use f in front of string"
+name = "Jame"
+print("Hello, %s !" % name)
+
+# multi lines f string (""")
+print(f"""
+fstring used in python v 3.6+
+easy to use and read than modulo operator (%)
+""")
+
+# fstring float decimal (.2f for 2 decimal)
+fnum = 10.35489
+print(f"float in 2 decimal {fnum:.2f}")
+
+# expression in fstring
+num1 = 190
+num2 = 130
+print(f"{num1} + {num2} = {num1 + num2}")
+
+# function call in fstring
+print(f"{funone()}")
+
+lambdafun = lambda num1, num2 : num1 + num2
+
+print(lambdafun(100,2000))
+
+
+def myfunc(n):
+  return lambda a : a * n
+
+
+mydoubler = myfunc(4)
+
+print(mydoubler(11))
+
+
