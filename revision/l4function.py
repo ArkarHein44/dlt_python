@@ -20,7 +20,7 @@ else:
     print("No, greater than")
 
 # identity operators
-a = [10,20,30]
+a = [10, 20, 30]
 b = a
 
 print("identity", a is b)

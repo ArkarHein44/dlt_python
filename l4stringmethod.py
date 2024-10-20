@@ -80,6 +80,7 @@ print(num3.isalnum())  # True
 
 print(num2.isalpha())  # False
 print(num3.isalpha())  # True
+print(num4.isalpha())  # False
 
 print(num2.isnumeric())  # True
 print(num3.isnumeric())  # False
@@ -87,7 +88,7 @@ print(num3.isnumeric())  # False
 print(num2.isalnum())  # True
 print(num3.isalnum())  # True  (alpha and num <check escape char> also space is a special escape character)
 print(num4.isalnum())  # False (cuz of space)
-print(num4.isalnum())  # False (cuz of !)
+print(num5.isalnum())  # False (cuz of !)
 
 middleName = " "
 print(middleName.isspace())  # True
@@ -101,7 +102,8 @@ print(sayhi.split())  # ['Hi', 'My', 'Friend']
 
 color = "red, green, blue, white, black"
 print(color.rsplit())  # ['red,', 'green,', 'blue,', 'white,', 'black']
-
+print(color.rsplit(","))  # ['red', ' green', ' blue', ' white', ' black']
+print(color.rsplit(",", 1))  # ['red, green, blue, white', ' black']
 
 # \n = new line
 sayhello = "Hello\nFriend"
@@ -113,12 +115,14 @@ print(sayhello.splitlines())  # ['Hello', 'Friend']
 sayhifi = "Hello Friend Mr.Maung"
 print(sayhifi.partition(" "))  # ('Hello', ' ', 'Friend Mr.Maung')
 print(sayhifi.partition("."))  # ('Hello Friend Mr', '.', 'Maung')
+print(type(sayhifi.partition(".")))  # <class 'tuple'>
+
 
 post = "Read"
-print(post.ljust(10,'-'))  # Read------
-print(post.rjust(10,'-'))  # ------Read
-print(post.center(10,'-'))  # ---Read---
-print(post.center(10,'*'))  # ***Read***
+print(post.ljust(10, '-'))  # Read------
+print(post.rjust(10, '-'))  # ------Read
+print(post.center(10, '-'))  # ---Read---
+print(post.center(10, '*'))  # ***Read***
 
 city = "Hello {}"
 print(city.format("Mandalay"))  # Hello Mandalay
@@ -126,9 +130,20 @@ print(city.format("Mandalay"))  # Hello Mandalay
 country = "Hello {} {}"
 print(country.format("Mandalay", "Myanmar"))  # Hello Mandalay Myanmar
 
+val1 = "sister"
+val2 = "Su Su"
+print("Hello my {}. are you {}!".format(val1, val2))  # Hello my sister. are you Su Su!
+
 # dictionary
 student = {"name": "su su"}
 sayname = "Dear, {name}"
 print(sayname.format_map(student))  # Dear, su su
 
+message = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Text ever since the 1500s lorem"
+
+countoflorem = message.count("Lorem")
+print(countoflorem)  # 2
+
+countoftext = message.count("text")
+print(countoftext)  # 1
 # 13SM
