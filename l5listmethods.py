@@ -91,6 +91,9 @@ print(countof20)  # 1
 countof25 = ages.count(25)
 print(countof25)  # 4
 
+print(ages.index(20))  # 7
+print(ages.index(30))  # 2
+
 # nested list
 numbers = [[1, 2, 3], [40, 50, 60], [700, 800, 900]]
 print(len(numbers))  # 3
@@ -110,6 +113,16 @@ print(numbers)  # [[1, 2, 3], [40, 50, 60], [700, 800, 900]]
 numbers.pop(1)
 print(numbers)  # [[1, 2, 3], [700, 800, 900]]
 
+greeting = ["Hello","Su Su"]
+print(" ".join(greeting))  # Hello Su Su
+print("-".join(greeting))  # Hello-Su Su
 
-# 20ME
+# List Unpacking
+print(greeting[0])
+print(greeting[1])
+
+val1, val2 = greeting
+print(val1)  # Hello
+print(val2)  # Su Su
+
 
