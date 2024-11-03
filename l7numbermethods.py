@@ -120,3 +120,5 @@ print(random.choice(numtuple1s))  # random  element from the tuplet
 
 numtuple2s = 10, 200, 300, 400, 5000
 print(random.choice(numtuple2s))  # random  element from the tuplet
+
+# 27TP
