@@ -106,5 +106,28 @@ if isinstance({"name": "nu nu"}, dict):
 else:
     print("No")
 
+# Nested if Statement 
+initnum = 25
 
-# 29FN
+if initnum > 0:
+    print('The Init Number is positive')
+    if initnum % 2 == 0:
+        print("The Init Number is even")
+    else:
+        print("The Init Number is odd")
+else:
+    print('The Init Number is not positive')
+
+# ternary conditional operator
+# true if condition else false 
+
+initidx = 10
+result = "Positive Idx" if initidx > 0 else "Negative Indx"
+print(result)
+
+result = "Even Idx" if initidx % 2 == 0 else "Odd Idx"
+print(result)
+
+gamestatus = False
+color = "\033[0;32m Green Color" if gamestatus == True else "\033[0;31m Red Color"
+print(color)
