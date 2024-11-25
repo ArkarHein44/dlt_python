@@ -116,6 +116,8 @@ print(numbers)  # [[1, 2, 3], [700, 800, 900]]
 greeting = ["Hello","Su Su"]
 print(" ".join(greeting))  # Hello Su Su
 print("-".join(greeting))  # Hello-Su Su
+x = "-".join(greeting)
+print(type(x))  # <class 'str'>
 
 # List Unpacking
 print(greeting[0])

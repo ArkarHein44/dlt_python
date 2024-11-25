@@ -127,11 +127,12 @@ print(sumresult(100))
 
 # print(msg)
 
-firstname = input("Enter First name = ")
-lastname = input("Enter Last name = ")
+# firstname = input("Enter First name = ")
+# lastname = input("Enter Last name = ")
 # fullname = "Hello %s%s" % (firstname,lastname) #v2
 # fullname = "Hello %s %s" % (firstname,lastname) #v2
-fullname = f"Hello {firstname} {lastname}"
-print(fullname)
+# fullname = f"Hello {firstname} {lastname}"
+# print(fullname)
 
-# 6IT
+
+
