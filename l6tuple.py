@@ -58,3 +58,5 @@ print(numbers[2][3])  # 7
 
 name = "aungaung"
 name[0] = "b"
+
+# print(name)  # TypeError: 'str' object does not support item assignment cuz strings are immutable in python.
