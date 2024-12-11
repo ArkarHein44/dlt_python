@@ -10,6 +10,7 @@ print(lady.get('gender', 'Not Defined')) # Not Defined
 
 # dict.keys 
 print(lady.keys())  # dict_keys(['name', 'age'])
+print(type(lady.keys()))  # <class 'dict_keys'>
 
 # list(dict.keys)
 print(list(lady.keys())) # ['name', 'age']

@@ -117,3 +117,5 @@ while index < len(paints):
     index += 1
 
 # 10IT
+
+# print(type(range(10)))

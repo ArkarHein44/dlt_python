@@ -65,7 +65,7 @@ print(fruits)
 fruits.clear()
 print(fruits)  # set()
 
-# frozenset (Immytable set)
+# frozenset (Immutable set)
 fornumbers = frozenset([10,20,30,40])
 # fornumbers.add(50) # error
 # fornumbers.remove(40) # error 

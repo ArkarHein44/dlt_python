@@ -99,7 +99,7 @@ print(pow(2.718281828459045,2))  # 7.3890560989306495
 print(math.exp(2))  # 7.38905609893065
 
 print(pow(2.718281828459045,3))  # 20.085536923187664
-print(math.exp(3))  # 20.085536923187668
+print(math.exp(3))  # 20.085536923187668 print(pow(float(math.e),3))
 
 # module for random 
 import random
