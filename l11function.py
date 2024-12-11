@@ -118,3 +118,20 @@ print(sumresult(100))
 # fullname = "Hello %s %s" % (firstname,lastname) #v2
 # fullname = f"Hello {firstname} {lastname}"
 # print(fullname)
+
+# Generator Function
+def genfun():
+    yield 1
+    yield 2
+    yield 3
+
+print(genfun())  # <generator object genfun at 0x0000027934104BF0>
+print(list(genfun()))  # [1, 2, 3]
+
+for value in genfun():
+    print(value)  # 1 2 3
+
+"""
+print("hello world")
+print("hello world")
+"""

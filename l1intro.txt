@@ -187,5 +187,7 @@ py l1sample.py
 => Comment (inline comment)
 #
 
+"" or ' for singile line string
+""" for multi line string
 
-
+""" works as multi lines comment
