@@ -8,6 +8,33 @@
 # is , is not Identity Operators
 # in , not in Membership Operators
 
+
+# Logical Operators
+# and 
+# or
+# not 
+
+# => and or not 
+
+username = "aungaung"
+password = "12345"
+
+inputuser = input("Enter username: ")
+inputpass =input("Enter password: ")
+
+# if username == inputuser and password == inputpass:
+#     print("Welcome Admin")
+# else:
+#     print("Try Again")
+
+# if username == inputuser or password == inputpass:
+#     print("Welcome Admin")
+# else:
+#     print("Try Again")
+
+hascar = False
+
+
 # Syntax
 # if True:
 # ----codes to be execute

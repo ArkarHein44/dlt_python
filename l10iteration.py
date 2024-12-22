@@ -119,3 +119,22 @@ while index < len(paints):
 # 10IT
 
 # print(type(range(10)))
+
+# => break continue 
+# while True:
+#     username = input("Enter username: ")
+#     if(username == "aungaung"):
+#         break
+#     else:
+#         continue
+
+# and not 
+initnum = False
+
+while not initnum:
+    luckynum = input("Enter your lucky number: ")
+    if(luckynum.isdigit() and int(luckynum)):
+        print(f"Your lucky number is {luckynum}")
+        initnum = True
+    else:
+        print("Invalid Number")

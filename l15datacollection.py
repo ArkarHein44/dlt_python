@@ -156,4 +156,49 @@ print(getdata)  # ChainMap({'name': 'Aye Aye'}, {'city': 'Yangon'})
 print(getdata['name'])  # Aye Aye
 print(getdata['city'])  # Yangon
 
+
+# => array (from array module)
+from array import array
+
+myarrs = array('i', [10, 20, 30, 40])
+print(myarrs)
+
+getlength = len(myarrs)
+print(getlength)
+
+print(myarrs[0])
+print(myarrs[2])
+
+myarrs.append(50)
+print(myarrs)
+
+print(myarrs.index(50))
+
+print(myarrs.count(20))
+
+myarrs.insert(1, 100)
+print(myarrs)
+
+myarrs.remove(30)
+print(myarrs)
+
+for value in myarrs:
+    print(value)
+
+myarrs.reverse()
+print(myarrs)
+
+# => Queue (from queue module)
+from queue import Queue
+
+qone = Queue()  # Queue(0) mean infinite size
+qone.put(400)
+qone.put(100)
+qone.put(300)
+
+print(qone.get()) # 400 get after remove data
+print(qone.get()) # 100
+print(qone.get()) # 300
+
 # 15CM
+
