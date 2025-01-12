@@ -127,4 +127,16 @@ val1, val2 = greeting
 print(val1)  # Hello
 print(val2)  # Su Su
 
+# => list(), create a new list
+greeting = "Hello Sir"
+print(list(greeting)) # ['H', 'e', 'l', 'l', 'o', ' ', 'S', 'i', 'r']
 
+# => zip(,) , iterables (such as lists, tuples, string)
+arrone = ["10", "20", "30"]
+arrtwo = ["hi", "hello", "bye"]
+
+ceratezip = zip(arrone, arrtwo)
+print(ceratezip) # <zip object at 0x000002A6A7786E40>
+
+converttolist = list(ceratezip)
+print(converttolist) # [('10', 'hi'), ('20', 'hello'), ('30', 'bye')]

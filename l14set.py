@@ -73,14 +73,20 @@ print(fornumbers)  # frozenset({40, 10, 20, 30})
 print(20 in fornumbers)  # True
 print(50 in fornumbers)  # False
 
+sayhi = "Hello Friend"
+print(set(sayhi)) # 'F', 'o', ' ', 'H', 'e', 'r', 'n', 'd', 'l', 'i'}
+
+
 set3 = {1,2,3,6,7}
 set4 = {3,4,6,5}
 
 # Union Combines 
 print(set3 | set4) # {1, 2, 3, 4, 5, 6, 7}
+print(set3.union(set4))
 
 # Intersection ( & )
 print(set3 & set4) # {3, 6}
+print(set3.intersection(set4)) 
 
 # Difference ( - )
 print(set3 - set4) # {1, 2, 7}
@@ -92,7 +98,6 @@ print(set3.symmetric_difference(set4)) # {1, 2, 4, 5, 7}
 
 print(set4 ^ set3) # {1, 2, 4, 5, 7}
 print(set4.symmetric_difference(set3)) # {1, 2, 4, 5, 7}
-
 
 # => set comprehension
 # {expression for item in iterable if condition}
