@@ -1,0 +1,23 @@
+[
+    {
+    "name":"Aung Myin Myat",
+    "age":20,
+    "isstudent":false,
+    "hascar":true,
+    "hoobies":["reading", "gaming"]
+    },
+    {
+        "name":"Chaw Chit Hlaing",
+        "age": 25,
+        "isstudent": false,
+        "hascar":true,
+        "hoobies":["reading", "travelling"]
+    },
+    {
+        "name":"Ya Min May",
+        "age": 26,
+        "isstudent": false,
+        "hascar":true,
+        "hoobies":["reading", "eating"]
+    }
+]

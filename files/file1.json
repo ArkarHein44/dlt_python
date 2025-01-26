@@ -1,0 +1,10 @@
+{
+   "packages": [
+      "FastAPI",
+      "Jinja2",
+      "websocket",
+      "Open Ai"
+   ],
+   "price": 25.99,
+   "title": "Python FastAPI Batch 1"
+}

@@ -56,9 +56,12 @@ print("\n Error Handling")
 try:
     with open("files/file7.txt", "w") as file:
         file.write("This is python batch 1 zoom class. \n")
-except IOError as err:
+except Exception as err:  # IOError/Exception 
     print(f"an IO error: {err}")
 finally:
     print("Program Completed")
+
+
+
 
 # 19WF
