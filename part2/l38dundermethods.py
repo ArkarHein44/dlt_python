@@ -64,4 +64,42 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
+class Person:
+    def __init__(self,name:str,age:int)->None:
+        self.name = name
+        self.age = age
+
+# => indexing 
+# => __getitem__
+
+class Worker:
+    def __init__(self,names):
+        self.names = names
+    
+    def __getitme__(self,index):
+        return self.names[index]
+    
+def main()->None:
+    workerobj: Worker = Worker(["Aung Aung", "Tun Tun", "Kyaw Kyaw"])
+    print(workerobj[0])
+    print(workerobj[1])
+    print(workerobj[2])
+
+class People:
+    def __init__(self,name):
+        self.name = name
+
+    def __del__(self):
+        print(f"{self.name} has been deleted.")
+    
+def main()->None:
+    peopleObj: People = People("Linn Linn")
+    del peopleObj
+    
+if __name__ == "__main__":
+    main()
+
+
+
+
 # 9DD
