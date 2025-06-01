@@ -2,7 +2,11 @@ from tasks import Taskjob
 
 taskjobObj = Taskjob()
 
+
 def main():
+
+    filename = "task.json"
+
     def menu():
         print("\n--- Task Menu ---")
         print("1. Add new task")
@@ -13,30 +17,43 @@ def main():
         print("6. Save Tasks ")
         print("7. exit \n")
 
+    def getpriority():
+        try:
+            return int(input("Enter priority (1 to 5) : "))
+        except ValueError:
+            print("Invalid Input, setting priority to default 1.")
+            return 1
+
     while True:
         menu()
         getnum = input("Choice number : ")
-        if getnum == 1:
-            return
-        elif getnum == 2:
-            return    
-        elif getnum == 3:
-            return    
-        elif getnum == 4:
-            return    
-        elif getnum == 5:
-            return    
-        elif getnum == 6:
-            return    
-        elif getnum == 7:
+        if getnum == "1":
+            title = input("Enter task title : ")
+            priority = getpriority()
+            taskjobObj.addnewtask(title, priority)
+        elif getnum == '2':
+            taskjobObj.listtask()    
+        elif getnum == "3":
+            taskjobObj.listtask()    
+        elif getnum == '4':
+            taskjobObj.listtask()
+            getindex = int(input("Enter task number to complete : "))    
+            taskjobObj.setcompletetask(getindex)
+        elif getnum == "5":
+            taskjobObj.isttask()
+            getindex = int(input("Enter task number to delete : ")) 
+            taskjobObj.deletetask(getindex)    
+        elif getnum == "6":
+            taskjobObj.savetasks()    
+        elif getnum == "7":
+            taskjobObj.savetasks()
             print("Thank You!!")  
+            break
         else:
             print("Invalid Choice")
 
 if __name__ == "__main__":
     main()
-
-
 
 # Task Menu 
 # 1. Add new task  (i) title (ii) priority (iii) complete
@@ -48,3 +65,4 @@ if __name__ == "__main__":
 # on exit auto save to a json file 
 
 # att code: 11MM
+# att code: 1TM

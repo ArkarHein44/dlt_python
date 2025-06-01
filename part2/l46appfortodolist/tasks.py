@@ -1,8 +1,19 @@
+import json
+
 class Task:
     def __init__(self, title, priority=1):
         self.title = title
         self.priority = priority
         self.completed = False
+
+    def setdict(self):
+        return {'title':self.title,'priority':self.priority,'completed':self.completed}
+
+    def getdict(data){
+        task = Task(data['title',data['priority']])
+        task.completed = data['completed']
+        return task
+    }
 
 class Taskjob:
     def __init__(self): 
@@ -43,3 +54,5 @@ class Taskjob:
             pass
         except IndexError:
             print("Invalid task number!")
+
+{'title', 'priority', 'completed'}
