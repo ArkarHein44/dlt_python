@@ -6,6 +6,7 @@ taskjobObj = Taskjob()
 def main():
 
     filename = "task.json"
+    taskjobObj.loadfile(filename)
 
     def menu():
         print("\n--- Task Menu ---")
@@ -34,15 +35,16 @@ def main():
         elif getnum == '2':
             taskjobObj.listtask()    
         elif getnum == "3":
-            taskjobObj.listtask()    
+            taskjobObj.listtask()  
+            getindex = int(input("Enter task number to complete : "))    
+            taskjobObj.setcompletetask(getindex)  
         elif getnum == '4':
             taskjobObj.listtask()
-            getindex = int(input("Enter task number to complete : "))    
-            taskjobObj.setcompletetask(getindex)
-        elif getnum == "5":
-            taskjobObj.isttask()
             getindex = int(input("Enter task number to delete : ")) 
-            taskjobObj.deletetask(getindex)    
+            taskjobObj.deletetask(getindex)  
+        elif getnum == "5":
+            taskjobObj.listtask()
+            taskjobObj.tasksreport()
         elif getnum == "6":
             taskjobObj.savetasks()    
         elif getnum == "7":
